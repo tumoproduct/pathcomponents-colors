@@ -1,0 +1,19 @@
+{
+  "name": "colors",
+  "authors": [
+    "Hayk Galstyan <hayk.galstyan@tumo.org>"
+  ],
+  "description": "",
+  "main": "colors.css",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
