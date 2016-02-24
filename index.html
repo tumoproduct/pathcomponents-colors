@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Colors</title>
+    <link rel="import" href="../font-roboto/roboto.html"/>
+    <style>
+      html,body
+      {
+        background-color: #000;
+        font-family: Roboto;
+      }
+
+      #container
+      {
+        width: 800px;
+        margin: auto;
+      }
+
+      h2
+      {
+        color: #fff;
+      }
+
+      .row
+      {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .clear
+      {
+        clear: both;
+      }
+
+      .color
+      {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+
+      .color:first-child
+      {
+        margin-left: 0px;
+      }
+
+      .color.border
+      {
+        border-width: 5px;
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="../stylo/stylo.js"></script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function()
+      {
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function()
+        {
+          if (httpRequest.readyState === 4)
+          {
+            if (httpRequest.status === 200)
+            {
+              var data = JSON.parse(httpRequest.responseText);
+              renderColors(data);
+            }
+          }
+        };
+        httpRequest.open('GET', "data.json");
+        httpRequest.send();
+
+        function renderColors(data)
+        {
+          var _stylo = new Stylo();
+
+          var container = document.querySelector("#container");
+          var colors =
+          [
+            {
+              "color" : "color",
+              "modifier" : ""
+            },
+            {
+              "color" : "light",
+              "modifier" : ".light"
+            },
+            {
+              "color" : "dark",
+              "modifier" : ".dark"
+            }
+          ];
+
+          var styles =
+          [
+              "color"
+            , "background-color"
+            , "border-color"
+          ];
+
+          for(var skill in data)
+          {
+            var h2 = document.createElement("h2");
+            h2.innerText = skill;
+
+            container.appendChild(h2);
+            var row = document.createElement("div");
+            row.classList.add("row");
+            container.appendChild(row);
+
+            for(var i = 0; i < styles.length; ++i)
+            {
+              for(var j = 0; j < colors.length; ++j)
+              {
+                var style = {};
+                style[styles[i]] = data[skill][colors[j].color];
+
+                _stylo.addRule
+                (
+                  "." + data[skill].csstag
+                  + "." + "apply-" + styles[i]
+                  + colors[j]["modifier"],
+                  style
+                );
+
+                var color = document.createElement("div");
+                color.classList.add(skill);
+                color.classList.add("color");
+                color.classList.add("apply-" + styles[i]);
+                if(colors[j].modifier != "")
+                {
+                  color.classList.add(colors[j].modifier.replace(".",""));
+                }
+
+                row.appendChild(color);
+
+                switch(i)
+                {
+                  case 0:
+                  {
+                    color.innerText = "COLOR";
+                  } break;
+
+                  case 1:
+                  {
+                    color.classList.add("background-color")
+                  } break;
+
+                  case 2:
+                  {
+                    color.classList.add("border");
+                  } break;
+                }
+              }
+            }
+
+            var clear = document.createElement("div");
+            clear.classList.add("clear");
+            row.appendChild(clear);
+          }
+
+          _stylo.update();
+        }
+      });
+    </script>
+  </body>
+</html>

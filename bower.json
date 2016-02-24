@@ -1,11 +1,11 @@
 {
   "name": "colors",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     "Hayk Galstyan <hayk.galstyan@tumo.org>"
   ],
   "description": "",
-  "main": "colors.css",
+  "main": "colors.min.css",
   "moduleType": [],
   "license": "MIT",
   "homepage": "",
@@ -15,6 +15,13 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ]
+    "tests",
+    "data.json",
+    "generator.js"
+    "index.html"
+  ],
+  "devDependencies": {
+    "font-roboto": "polymerelements/font-roboto#1.0.1",
+    "stylo": "^1.0.1"
+  }
 }
