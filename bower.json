@@ -17,7 +17,7 @@
     "test",
     "tests",
     "data.json",
-    "generator.js"
+    "generator.js",
     "index.html"
   ],
   "devDependencies": {
