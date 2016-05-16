@@ -21,7 +21,6 @@
     "index.html"
   ],
   "devDependencies": {
-    "font-roboto": "polymerelements/font-roboto#1.0.1",
-    "stylo": "^1.0.1"
+    "font-roboto": "polymerelements/font-roboto#1.0.1"
   }
 }

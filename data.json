@@ -1,127 +1,136 @@
 {
-  "animation" :
+  "skill":
   {
-    "id" : "54197cf1b3b852b80600003c",
-    "color"     : "#faa61b",
-    "light"    : "#fdd798",
-    "dark"   : "#d4711b",
-    "csstag"    : "animation"
-  },
+    "animation" :
+    {
+      "id" : "54197cf1b3b852b80600003c",
+      "color"     : "#faa61b",
+      "light"    : "#fdd798",
+      "dark"   : "#d4711b",
+      "csstag"    : "animation"
+    },
 
-  "web-development" :
-  {
-    "id" : "54197d08b3b852040a00003c",
-    "color"     : "#4e87c6",
-    "light"    : "#afc9e5",
-    "dark"   : "#386190",
-    "csstag"    : "web-development"
-  },
+    "web-development" :
+    {
+      "id" : "54197d08b3b852040a00003c",
+      "color"     : "#4e87c6",
+      "light"    : "#afc9e5",
+      "dark"   : "#386190",
+      "csstag"    : "web-development"
+    },
 
-  "game-development" :
-  {
-    "id" : "541991f5b3b8524c1b00003d",
-    "color"     : "#8dc641",
-    "light"    : "#cce5aa",
-    "dark"   : "#5c9230",
-    "csstag"    : "game-development"
-  },
+    "game-development" :
+    {
+      "id" : "541991f5b3b8524c1b00003d",
+      "color"     : "#8dc641",
+      "light"    : "#cce5aa",
+      "dark"   : "#5c9230",
+      "csstag"    : "game-development"
+    },
 
-  "filmmaking" :
-  {
-    "id" : "541991f5b3b8524c1b00003c",
-    "color"     : "#f1592b",
-    "light"    : "#f9b4a0",
-    "dark"   : "#c6401b",
-    "csstag"    : "filmmaking"
-  },
+    "filmmaking" :
+    {
+      "id" : "541991f5b3b8524c1b00003c",
+      "color"     : "#f1592b",
+      "light"    : "#f9b4a0",
+      "dark"   : "#c6401b",
+      "csstag"    : "filmmaking"
+    },
 
-  "motion-graphics":
-  {
-    "id" : "56b8557bc33670399cdd2372",
-    "color"     : "#bf202f",
-    "light"    : "#f9b4a0",
-    "dark"   : "#aa1f29",
-    "csstag"    : "motion-graphics"
-  },
+    "motion-graphics":
+    {
+      "id" : "56b8557bc33670399cdd2372",
+      "color"     : "#bf202f",
+      "light"    : "#f9b4a0",
+      "dark"   : "#aa1f29",
+      "csstag"    : "motion-graphics"
+    },
 
-  "programming" :
-  {
-    "id" : "54199249b3b852b80a000042",
-    "color"     : "#a2a475",
-    "light"    : "#d5d6c1",
-    "dark"   : "#81815a",
-    "csstag"    : "programming"
-  },
+    "programming" :
+    {
+      "id" : "54199249b3b852b80a000042",
+      "color"     : "#a2a475",
+      "light"    : "#d5d6c1",
+      "dark"   : "#81815a",
+      "csstag"    : "programming"
+    },
 
-  "3d-modeling" :
-  {
-    "id" : "54199249b3b852b80a000040",
-    "color"   : "#747b35",
-    "light"  : "#c0c4a4",
-    "dark" : "#4c541e",
-    "csstag"  : "\\33 d-modeling"
-  },
+    "3d-modeling" :
+    {
+      "id" : "54199249b3b852b80a000040",
+      "color"   : "#747b35",
+      "light"  : "#c0c4a4",
+      "dark" : "#4c541e",
+      "csstag"  : "\\33 d-modeling"
+    },
 
-  "graphic-design" :
-  {
-    "id" : "54199249b3b852b80a000041",
-    "color"   : "#56652d",
-    "light"  : "#b3baa1",
-    "dark" : "#3f4e1e",
-    "csstag"  : "graphic-design"
-  },
+    "graphic-design" :
+    {
+      "id" : "54199249b3b852b80a000041",
+      "color"   : "#56652d",
+      "light"  : "#b3baa1",
+      "dark" : "#3f4e1e",
+      "csstag"  : "graphic-design"
+    },
 
-  "writing" :
-  {
-    "id" : "54199249b3b852b80a00003e",
-    "color"   : "#bf83b9",
-    "light"  : "#c999c5",
-    "dark" : "#96578f",
-    "csstag"  : "writing"
-  },
+    "writing" :
+    {
+      "id" : "54199249b3b852b80a00003e",
+      "color"   : "#bf83b9",
+      "light"  : "#c999c5",
+      "dark" : "#96578f",
+      "csstag"  : "writing"
+    },
 
-  "music" :
-  {
-    "id" : "54199249b3b852b80a00003d",
-    "color"   : "#722772",
-    "light"  : "#924891",
-    "dark" : "#521052",
-    "csstag"  : "music"
-  },
+    "music" :
+    {
+      "id" : "54199249b3b852b80a00003d",
+      "color"   : "#722772",
+      "light"  : "#924891",
+      "dark" : "#521052",
+      "csstag"  : "music"
+    },
 
-  "drawing" :
-  {
-    "id" : "54199249b3b852b80a00003f",
-    "color"   : "#9f306e",
-    "light"  : "#b63f82",
-    "dark" : "#781e51",
-    "csstag"  : "drawing"
-  },
+    "drawing" :
+    {
+      "id" : "54199249b3b852b80a00003f",
+      "color"   : "#9f306e",
+      "light"  : "#b63f82",
+      "dark" : "#781e51",
+      "csstag"  : "drawing"
+    },
 
-  "robotics" :
-  {
-    "id" : "54199249b3b852b80a000044",
-    "color"   : "#b75b46",
-    "light"  : "#dfb5ac",
-    "dark" : "#823d2c",
-    "csstag"  : "robotics"
-  },
+    "robotics" :
+    {
+      "id" : "54199249b3b852b80a000044",
+      "color"   : "#b75b46",
+      "light"  : "#dfb5ac",
+      "dark" : "#823d2c",
+      "csstag"  : "robotics"
+    },
 
-  "photography" :
-  {
-    "id" : "54199249b3b852b80a00003c",
-    "color"   : "#1baebe",
-    "light"  : "#98dbe2",
-    "dark" : "#00727d",
-    "csstag"  : "photography"
-  },
+    "photography" :
+    {
+      "id" : "54199249b3b852b80a00003c",
+      "color"   : "#1baebe",
+      "light"  : "#98dbe2",
+      "dark" : "#00727d",
+      "csstag"  : "photography"
+    },
 
-  "online-literacy" :
+    "online-literacy" :
+    {
+      "id" : "54199249b3b852b80a000043",
+      "color"   : "#6d99cf",
+      "light"  : "#9db7da",
+      "dark" : "#49688c",
+      "csstag"  : "online-literacy"
+    }
+  },
+  "intent":
   {
-    "id" : "54199249b3b852b80a000043",
-    "color"   : "#6d99cf",
-    "light"  : "#9db7da",
-    "dark" : "#49688c",
-    "csstag"  : "online-literacy"
+    "confirm": "#8dc641",
+    "cancel": "#ec4f4f",
+    "choose": "#f9a51b"
   }
 }
