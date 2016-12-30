@@ -3,6 +3,7 @@
   <head>
     <title>Colors</title>
     <link rel="import" href="../font-roboto/roboto.html"/>
+    <link rel="stylesheet" type="text/css" href="colors.min.css"/>
     <style>
       html,body
       {
@@ -81,8 +82,6 @@
 
         function renderColors(data)
         {
-          var _stylo = new Stylo();
-
           var container = document.querySelector("#container");
           var colors =
           [
@@ -107,7 +106,8 @@
             , "border-color"
           ];
 
-          for(var skill in data)
+          // generate skills
+          for(var skill in data.skill)
           {
             var h2 = document.createElement("h2");
             h2.innerText = skill;
@@ -121,17 +121,6 @@
             {
               for(var j = 0; j < colors.length; ++j)
               {
-                var style = {};
-                style[styles[i]] = data[skill][colors[j].color];
-
-                _stylo.addRule
-                (
-                  "." + data[skill].csstag
-                  + "." + "apply-" + styles[i]
-                  + colors[j]["modifier"],
-                  style
-                );
-
                 var color = document.createElement("div");
                 color.classList.add(skill);
                 color.classList.add("color");
@@ -147,7 +136,7 @@
                 {
                   case 0:
                   {
-                    color.innerText = "COLOR";
+                    color.innerText = colors[j].modifier != "" ? colors[j].modifier : "default";
                   } break;
 
                   case 1:
@@ -168,7 +157,48 @@
             row.appendChild(clear);
           }
 
-          _stylo.update();
+          for(var intent in data.intent)
+          {
+            var h2 = document.createElement("h2");
+            h2.innerText = intent;
+
+            container.appendChild(h2);
+            var row = document.createElement("div");
+            row.classList.add("row");
+            container.appendChild(row);
+
+            for(var i = 0; i < styles.length; ++i)
+            {
+              var color = document.createElement("div");
+              color.classList.add(intent);
+              color.classList.add("color");
+              color.classList.add("apply-" + styles[i]);
+
+              row.appendChild(color);
+
+              switch(i)
+              {
+                case 0:
+                {
+                  color.innerText = intent;
+                } break;
+
+                case 1:
+                {
+                  color.classList.add("background-color")
+                } break;
+
+                case 2:
+                {
+                  color.classList.add("border");
+                } break;
+              }
+            }
+
+            var clear = document.createElement("div");
+            clear.classList.add("clear");
+            row.appendChild(clear);
+          }
         }
       });
     </script>
