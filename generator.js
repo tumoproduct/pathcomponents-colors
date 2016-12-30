@@ -48,4 +48,4 @@ for(var skill in data)
   }
 }
 
-fs.writeFileSync("colors.min.css",output);
+fs.writeFileSync("colors.min.css",output,{flag:"w"});

@@ -116,12 +116,12 @@
     "csstag"  : "photography"
   },
 
-  "online-literacy" :
+  "new-media" :
   {
     "id" : "54199249b3b852b80a000043",
     "color"   : "#6d99cf",
     "light"  : "#9db7da",
     "dark" : "#49688c",
-    "csstag"  : "online-literacy"
+    "csstag"  : "new-media"
   }
 }
