@@ -1,0 +1,11 @@
+{
+  "name": "colors",
+  "version": "3.0.0",
+  "main": "colors.min.css",
+  "repository": "http://git.tumo.lab/pathcomponents/colors.git",
+  "author": "Hayk Galstyan <hayk.galstyan@tumo.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "@polymerelements/font-roboto": "https://github.com/PolymerElements/font-roboto.git#1.0.1"
+  }
+}
