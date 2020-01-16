@@ -2,7 +2,7 @@
   "name": "colors",
   "version": "3.0.0",
   "main": "colors.min.css",
-  "repository": "http://git.tumo.lab/pathcomponents/colors.git",
+  "repository": "https://github.com/tumoproduct/pathcomponents-colors.git",
   "author": "Hayk Galstyan <hayk.galstyan@tumo.org>",
   "license": "MIT",
   "devDependencies": {
